@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Info Alasria
+    </title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- NAVBAR -->
+        <nav id="main-nav">
+            <img src="images/hamburger.png" alt="" class="nav-icon hamburger" id="hamburger">
+            <img src="images/close.png" alt="" class="nav-icon close" id="close">
+            <span id="logo">Info Alasria</span>
+            <ul id="nav-links">
+                <a href=""><li class="nav-item">Home</li></a>  
+                <a href="#about-us"><li class="nav-item">About</li></a>  
+                <a href="#services"><li class="nav-item">Services</li></a>  
+                <a href="#contact-us"><li class="nav-item">Contact</li></a>  
+            </ul>
+        </nav>
+          <!-- NAVBAR END -->
+    </header>
+
+    <!-- CAROUSEL START-->
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img class="slideshow-img"src="images/carousel-img-1.jpg" style="width: 100%;">
+   
+    </div>
+  
+    <div class="mySlides fade">
+      <img class="slideshow-img"src="images/carousel-img-2.jpg" style="width: 100%;">
+  
+    </div>
+  
+    <div class="mySlides fade">
+      <img class="slideshow-img"src="images/carousel-img-3.jpg" style="width: 100%;">
+    
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  <br>
+  <div id="dot-container" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  
+  <!-- The dots/circles -->
+
+<!-- CAROUSEL END -->
+
+<!-- ABOUT US START-->
+<section id="about-us">
+    <article id="about-us-card">
+        <h2 id="about-us-heading">About Us</h2>
+        <p class="about-us-para para-1">We would like to introduce ourselves as Info Alasria a place where you can find your perfect employee and employers. Info Alasria came into existence to bridge the gap between the recruiters and individuals looking for a job in their esteemed fields.</p>
+        <p class="about-us-para para-2">We established in 2018 comprising of a team having immense experience and well versed with the intricacies of the Travel and Recruitment Services. Since then we have been rendering services in the field of international recruitment and travel.</p>
+        <p class="about-us-para para-3">"Our mission is to provide high quality recruitment services to individuals and organizations which exceeds their expectations and ensures long term customer satisfaction and retention".</p>
+        <p class="about-us-para para-4">We offer professional support to our clients and customers who are continually engaging in our service and looking forward to cherish the hassle free journey of getting the right job or finding the right employee.</p>
+        <img id="about-us-img"src="images/about-us-img.jpg" alt="">
+    </article>
+</section>
+
+<!-- ABOUT US END -->
+
+<!-- SERVICES - START -->
+
+<section id="services">
+    <h2 id="services-heading">Services</h2>
+    <div id="service-card-wrapper">
+        <article class="service-cards">
+            <img src="images/service-img-1.jpg" alt="">
+            <h3 class="card-heading">Visa Services</h3>
+            <p class="card-para">We at Info Alasria provides our clients with professional visa assistance and visa services.</p>
+            <button class="card-btn">Read More</button>
+        </article>
+        <article class="service-cards">
+            <img src="images/service-img-2.jpg" alt="">
+            <h3 class="card-heading">Recruitment</h3>
+            <p class="card-para">Delivering employement opportunities to our clients in countries like Saudi, Qatar, Kuwait.
+            </p>
+            <button class="card-btn">Read More</button>
+        </article>
+        <article class="service-cards">
+            <img src="images/service-img-3.jpg" alt="">
+            <h3 class="card-heading">Attestation</h3>
+            <p class="card-para">We provide Attestation Certificate by authorised person/authorities with their official seal and signature.</p>
+            <button class="card-btn">Read More</button>
+        </article>
+        <article class="service-cards">
+            <img src="images/service-img-4.jpg" alt="">
+            <h3 class="card-heading">Emigration</h3>
+            <p class="card-para">We offer professional support
+                and services to our clients in immigration process.</p>
+            <button class="card-btn">Read More</button>
+        </article>
+        <article class="service-cards">
+            <img src="images/service-img-5.jpg" alt="">
+            <h3 class="card-heading">Air Ticketing</h3>
+            <p class="card-para">Organizing the course of travel and accommodation anywhere in the world. Various outbound packages.</p>
+            <button class="card-btn">Read More</button>
+        </article>
+        <article class="service-cards">
+            <img src="images/service-img-6.jpg" alt="">
+            <h3 class="card-heading">Other Services</h3>
+            <p class="card-para">Some quick example text to build on the card title and make up the bulk of the card's content.
+
+            </p>
+            <button class="card-btn">Read More</button>
+        </article>
+       
+    </div>
+</section>
+
+
+<section id="contact-us">
+    <article id="contact-us-container">
+        <div class="contact-us-header">
+            <h3>Contact Us</h3>
+            <p>Do you have any questions? Please do not hesitate to contact us directly.
+                Our team will come back to you within a matter of hours to help you.
+            </p>
+        </div>
+        <form action="">
+            <div class="input name-input">
+                <input type="text" id="name">
+                <label for="name">Your Name</label>
+            </div>
+            <div class="input email-input">
+                <input type="email" id="email">
+                <label for="email">Your Email</label></div>
+            <div class="input subject-input">
+                <input type="text" name="" id="subject">
+                <label for="subject">Your Name</label>
+            </div>
+            <div class="input message-input">
+                <textarea name="" id="message" cols="30" rows="6"></textarea>
+                <label for="message">Your message</label>
+            </div>
+            <button class="contact-us-btn">Submit</button>
+        </form>
+        <div class="contact-us-info">
+            <span>
+                <img src="images/location.png" alt="">
+                <span>Clare Road, Byculla 400008, IN</span>
+            </span>
+            <span>
+                <img src="images/location.png" alt="">
+                <a href="tel:+91 8433 6143 41">+91 8433 6143 41</a>
+                <a href="tel:+91 9137 4664 82">+91 9137 4664 82</a>
+            </span>
+            <span>
+                <img src="images/location.png" alt="">
+                <a href = "mailto: infotradlink1990@gmail.com">infotradlink1990@gmail.com</a>
+            </span>
+            
+        </div>
+    </article>
+</section>
+
+<footer>
+    <section id="social">
+        <span>Get connected with us on social networks : </span>
+        <ul id="social-icons">
+            <li class="social.icon"><img src="images/whatsapp.png" alt=""></li>
+            <li class="social.icon"><img src="images/whatsapp.png" alt=""></li>
+            <li class="social.icon"><img src="images/whatsapp.png" alt=""></li>
+            <li class="social.icon"><img src="images/whatsapp.png" alt=""></li>
+            <li class="social.icon"><img src="images/whatsapp.png" alt=""></li>
+            <li class="social.icon"><img src="images/whatsapp.png" alt=""></li>
+        </ul>
+    </section>
+    <section id="footer-content">
+        <div class="footer-description">
+            <h3>
+                INFO ALASRIA
+            </h3>
+            <hr>
+            <p>We provide multiple services related to employement in gulf countries like Saudi Arabia, UAE, Qatar, Kuwait.</p>
+        </div>
+        <div class="footer-pages">
+            <h3>PAGES</h3>
+            <hr>
+            <ul>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="">Vacancy</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h3>CONTACT US</h3>
+            <hr>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="images/location.png" alt="">
+                        Clare Road, Byculla 400008, IN
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:infotradlink1990@gmail.com">
+                        <img src="images/location.png" alt=""> infotradlink1990@gmail.com
+                    </a>
+                    </li>
+                <li>
+                    <a href="tel:+91 8433 614 341">
+                        <img src="images/location.png" alt="">
+                         +91 8433 614 341
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+91 8433 614 341">
+                        <img src="images/location.png" alt=""> 
+                        +91 8433 614 341
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</footer>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+</body>
+</html>
