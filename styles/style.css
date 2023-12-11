@@ -752,15 +752,15 @@ footer{
 
    
     .service-cards{
-        width: 75vw;
+        width: 80vw;
         height: auto;
         padding-bottom: 1rem;
     }
 
     #contact-us-container{
        
-        padding: 1rem 0.5rem;
-        width: 90vw;
+        padding: 1rem;
+        width: 100vw;
      }
 
      .contact-us-header h3{
