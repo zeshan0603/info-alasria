@@ -36,7 +36,7 @@ const close = document.getElementById("close");
 
 hamburger.addEventListener('click',()=>{
     navBar.style.height ="200px";
-    navLinks.style.display ="none";
+    navLinks.style.display ="flex";
     hamburger.style.display =" none";
     close.style.display = "block";
 })
@@ -45,6 +45,6 @@ hamburger.addEventListener('click',()=>{
 close.addEventListener('click',()=>{
   navBar.style.height ="55px";
   navLinks.style.display ="none";
-  hamburger.style.display =" flex";
+  hamburger.style.display =" block";
   close.style.display = "none";
 })
