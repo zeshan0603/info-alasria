@@ -659,7 +659,8 @@ footer{
     }
 
     #nav-links{
-       opacity: 0;
+       /* opacity: 0; */
+       display: none;
         gap: 0.5rem;
         align-self: center;
         /* border: 1px red; */
@@ -776,6 +777,4 @@ footer{
       
     }
 
-   
-    
-  }
+}
