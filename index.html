@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        Info Alasria
+        Info Alasria 2
     </title>
     <!-- CSS -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style.css">
     <!-- ICON -->
     <link rel="icon" href="images/letter-z.png">
     <!-- Google Fonts -->
@@ -18,16 +18,28 @@
 <body>
     <header>
         <!-- NAVBAR -->
-        <nav id="main-nav">
-            <img src="images/hamburger.png" alt="" class="nav-icon hamburger" id="hamburger">
-            <img src="images/close.png" alt="" class="nav-icon close" id="close">
+        <nav id="mainNav">
             <span id="logo">Info Alasria</span>
-            <ul id="nav-links">
-                <a href=""><li class="nav-item">Home</li></a>  
-                <a href="#about-us"><li class="nav-item">About</li></a>  
-                <a href="#services"><li class="nav-item">Services</li></a>  
-                <a href="#contact-us"><li class="nav-item">Contact</li></a>  
+            <ul id="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contactUs" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#aboutUs" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                 
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
           <!-- NAVBAR END -->
     </header>
@@ -38,18 +50,15 @@
 
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
-      <img class="slideshow-img"src="images/carousel-img-1.jpg" style="width: 100%;">
-   
+      <img loading="eager" class="slideshow-img"src="images/carousel-img-1.jpg" width="200" height="200" alt="carousel image 1">
     </div>
   
     <div class="mySlides fade">
-      <img class="slideshow-img"src="images/carousel-img-2.jpg" style="width: 100%;">
-  
+      <img loading="lazy" class="slideshow-img"src="images/carousel-img-2.jpg" width="200" height="200" alt="carousel image 2">
     </div>
   
     <div class="mySlides fade">
-      <img class="slideshow-img"src="images/carousel-img-3.jpg" style="width: 100%;">
-    
+      <img loading="lazy" class="slideshow-img"src="images/carousel-img-3.jpg" width="200" height="200" style="width: 100%;" alt="carousel image 3">
     </div>
   
     <!-- Next and previous buttons -->
@@ -67,178 +76,213 @@
 
 <!-- CAROUSEL END -->
 
-<!-- ABOUT US START-->
-<section id="about-us">
-    <article id="about-us-card">
-        <h2 id="about-us-heading">About Us</h2>
-        <p class="about-us-para para-1">We would like to introduce ourselves as Info Alasria a place where you can find your perfect employee and employers. Info Alasria came into existence to bridge the gap between the recruiters and individuals looking for a job in their esteemed fields.</p>
-        <p class="about-us-para para-2">We established in 2018 comprising of a team having immense experience and well versed with the intricacies of the Travel and Recruitment Services. Since then we have been rendering services in the field of international recruitment and travel.</p>
-        <p class="about-us-para para-3">"Our mission is to provide high quality recruitment services to individuals and organizations which exceeds their expectations and ensures long term customer satisfaction and retention".</p>
-        <p class="about-us-para para-4">We offer professional support to our clients and customers who are continually engaging in our service and looking forward to cherish the hassle free journey of getting the right job or finding the right employee.</p>
-        <img id="about-us-img"src="images/about-us-img.jpg" alt="">
-    </article>
-</section>
 
+
+
+
+
+<!-- ABOUT US START-->
+<section id="aboutUs" class="aboutUs"> 
+    <div class="aboutUs__content">
+        <h2>About Us</h2>
+        <p>We would like to introduce ourselves as Info Alasria a place where you can find your perfect employee and employers. Info Alasria came into existence to bridge the gap between the recruiters and individuals looking for a job in their esteemed fields.</p>
+        <p>We established in 2018 comprising of a team having immense experience and well versed with the intricacies of the Travel and Recruitment Services. Since then we have been rendering services in the field of international recruitment and travel.</p>
+        <p>"Our mission is to provide high quality recruitment services to individuals and organizations which exceeds their expectations and ensures long term customer satisfaction and retention".</p>
+        <p>We offer professional support to our clients and customers who are continually engaging in our service and looking forward to cherish the hassle free journey of getting the right job or finding the right employee.</p>
+    </div>
+    <img width="400" height="600" class="aboutUs__img" src="images/about-us-img.jpg" alt="about us">
+</section>
 <!-- ABOUT US END -->
 
+
+
+
+
 <!-- SERVICES - START -->
-
 <section id="services">
-    <h2 id="services-heading">Services</h2>
-    <div id="service-card-wrapper">
-        <article class="service-cards">
-            <img src="images/service-img-1.jpg" alt="">
-            <h3 class="card-heading">Visa Services</h3>
-            <p class="card-para">We at Info Alasria provides our clients with professional visa assistance and visa services.</p>
-            <button class="card-btn">Read More</button>
-        </article>
-        <article class="service-cards">
-            <img src="images/service-img-2.jpg" alt="">
-            <h3 class="card-heading">Recruitment</h3>
-            <p class="card-para">Delivering employement opportunities to our clients in countries like Saudi, Qatar, Kuwait.
-            </p>
-            <button class="card-btn">Read More</button>
-        </article>
-        <article class="service-cards">
-            <img src="images/service-img-3.jpg" alt="">
-            <h3 class="card-heading">Attestation</h3>
-            <p class="card-para">We provide Attestation Certificate by authorised person/authorities with their official seal and signature.</p>
-            <button class="card-btn">Read More</button>
-        </article>
-        <article class="service-cards">
-            <img src="images/service-img-4.jpg" alt="">
-            <h3 class="card-heading">Emigration</h3>
-            <p class="card-para">We offer professional support
-                and services to our clients in immigration process.</p>
-            <button class="card-btn">Read More</button>
-        </article>
-        <article class="service-cards">
-            <img src="images/service-img-5.jpg" alt="">
-            <h3 class="card-heading">Air Ticketing</h3>
-            <p class="card-para">Organizing the course of travel and accommodation anywhere in the world. Various outbound packages.</p>
-            <button class="card-btn">Read More</button>
-        </article>
-        <article class="service-cards">
-            <img src="images/service-img-6.jpg" alt="">
-            <h3 class="card-heading">Other Services</h3>
-            <p class="card-para">Some quick example text to build on the card title and make up the bulk of the card's content.
+    <h2>Services</h2>
+        <div class="service__cards">
+            <article>
+                <img loading="lazy" src="images/service-img-1.jpg" alt="">
+                <h3 >Visa Services</h3>
+                <p >We at Info Alasria provides our clients with professional visa assistance and visa services.</p>
+                <a>Read More</a>
+            </article>
+            <article>
+                <img loading="lazy" src="images/service-img-2.jpg" alt="">
+                <h3>Recruitment</h3>
+                <p>Delivering employement opportunities to our clients in countries like Saudi, Qatar, Kuwait.
+                </p>
+                <a>Read More</a>
+            </article>
+            <article>
+                <img loading="lazy" src="images/service-img-3.jpg" alt="">
+                <h3>Attestation</h3>
+                <p>We provide Attestation Certificate by authorised person/authorities with their official seal and signature.</p>
+                <a>Read More</a>
+            </article>
+            <article>
+                <img loading="lazy" src="images/service-img-4.jpg" alt="">
+                <h3>Emigration</h3>
+                <p>We offer professional support
+                    and services to our clients in immigration process.</p>
+                <a>Read More</a>
+            </article>
+            <article>
+                <img loading="lazy" src="images/service-img-5.jpg" alt="">
+                <h3>Air Ticketing</h3>
+                <p>Organizing the course of travel and accommodation anywhere in the world. Various outbound packages.</p>
+                <a >Read More</a>
+            </article>
+            <article>
+                <img loading="lazy" src="images/service-img-6.jpg" alt="">
+                <h3>Other Services</h3>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+                <a>Read More</a>
+            </article>
+        </div>
+</section>
+<!-- SERVICES END -->
 
-            </p>
-            <button class="card-btn">Read More</button>
-        </article>
-       
+
+<!-- CONTACT US -->
+<section id="contactUs">
+    <h3>Contact Us</h3>
+    <p>Do you have any questions? Please do not hesitate to contact us directly.
+        Our team will come back to you within a matter of hours to help you.
+    </p>
+<form action="">
+        <input type="text" id="name" class="name">
+        <label for="name" class="contactForm__label l1">Your Name</label>
+    
+        <input type="email" id="email" class="email">
+        <label for="email" class="contactForm__label l2">Your Email</label></div>
+    
+        <input type="text" name="" id="subject">
+        <label for="subject"class="contactForm__label l3">Your Subject</label>
+ 
+        <textarea name="" id="message" cols="30" rows="7"></textarea>
+        <label for="message"class="contactForm__label l4">Your message</label>
+
+        <button class="contactUs__btn">Submit</button>
+</form>
+    <div class="contact__info">
+        <span>
+            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>Clare Road, Byculla 400008, IN
+        </span>
+        <span>
+            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            <a href="tel:+91 8433 6143 41">+91 8433 6143 41</a>
+            <a href="tel:+91 9137 4664 82">+91 9137 4664 82</a>
+        </span>
+
+        <span>
+            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            <a href = "mailto: infotradlink1990@gmail.com">infotradlink1990@gmail.com</a>
+        </span>
     </div>
 </section>
+<!-- CONTACT US  -->
 
-
-<section id="contact-us">
-    <article id="contact-us-container">
-        <div class="contact-us-header">
-            <h3>Contact Us</h3>
-            <p>Do you have any questions? Please do not hesitate to contact us directly.
-                Our team will come back to you within a matter of hours to help you.
-            </p>
-        </div>
-        <form action="">
-            <div class="input name-input">
-                <input type="text" id="name">
-                <label for="name">Your Name</label>
-            </div>
-            <div class="input email-input">
-                <input type="email" id="email">
-                <label for="email">Your Email</label></div>
-            <div class="input subject-input">
-                <input type="text" name="" id="subject">
-                <label for="subject">Your Name</label>
-            </div>
-            <div class="input message-input">
-                <textarea name="" id="message" cols="30" rows="6"></textarea>
-                <label for="message">Your message</label>
-            </div>
-            <button class="contact-us-btn">Submit</button>
-        </form>
-        <div class="contact-us-info">
-            <span>
-                <img src="images/location.png" alt="">
-                <span>Clare Road, Byculla 400008, IN</span>
-            </span>
-            <span>
-                <img src="images/location.png" alt="">
-                <a href="tel:+91 8433 6143 41">+91 8433 6143 41</a>
-                <a href="tel:+91 9137 4664 82">+91 9137 4664 82</a>
-            </span>
-            <span>
-                <img src="images/location.png" alt="">
-                <a href = "mailto: infotradlink1990@gmail.com">infotradlink1990@gmail.com</a>
-            </span>
-            
-        </div>
-    </article>
+<!-- SOCIAL -->
+<section id="social">
+    <span>Get connected with us on social networks : </span>
+    <ul>
+        <li><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 5C13.4477 5 13 5.44772 13 6C13 6.27642 13.1108 6.52505 13.2929 6.70711C13.475 6.88917 13.7236 7 14 7C14.5523 7 15 6.55228 15 6C15 5.44772 14.5523 5 14 5ZM11 6C11 4.34315 12.3431 3 14 3C15.6569 3 17 4.34315 17 6C17 7.65685 15.6569 9 14 9C13.5372 9 13.0984 8.8948 12.7068 8.70744L10.7074 10.7068C10.8948 11.0984 11 11.5372 11 12C11 12.4628 10.8948 12.9016 10.7074 13.2932L12.7068 15.2926C13.0984 15.1052 13.5372 15 14 15C15.6569 15 17 16.3431 17 18C17 19.6569 15.6569 21 14 21C12.3431 21 11 19.6569 11 18C11 17.5372 11.1052 17.0984 11.2926 16.7068L9.29323 14.7074C8.90157 14.8948 8.46277 15 8 15C6.34315 15 5 13.6569 5 12C5 10.3431 6.34315 9 8 9C8.46277 9 8.90157 9.1052 9.29323 9.29256L11.2926 7.29323C11.1052 6.90157 11 6.46277 11 6ZM8 11C7.44772 11 7 11.4477 7 12C7 12.5523 7.44772 13 8 13C8.27642 13 8.52505 12.8892 8.70711 12.7071C8.88917 12.525 9 12.2764 9 12C9 11.7236 8.88917 11.475 8.70711 11.2929C8.52505 11.1108 8.27642 11 8 11ZM14 17C13.7236 17 13.475 17.1108 13.2929 17.2929C13.1108 17.475 13 17.7236 13 18C13 18.5523 13.4477 19 14 19C14.5523 19 15 18.5523 15 18C15 17.4477 14.5523 17 14 17Z" fill="#ffffff"/>
+            </svg></li>
+        <li><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 5C13.4477 5 13 5.44772 13 6C13 6.27642 13.1108 6.52505 13.2929 6.70711C13.475 6.88917 13.7236 7 14 7C14.5523 7 15 6.55228 15 6C15 5.44772 14.5523 5 14 5ZM11 6C11 4.34315 12.3431 3 14 3C15.6569 3 17 4.34315 17 6C17 7.65685 15.6569 9 14 9C13.5372 9 13.0984 8.8948 12.7068 8.70744L10.7074 10.7068C10.8948 11.0984 11 11.5372 11 12C11 12.4628 10.8948 12.9016 10.7074 13.2932L12.7068 15.2926C13.0984 15.1052 13.5372 15 14 15C15.6569 15 17 16.3431 17 18C17 19.6569 15.6569 21 14 21C12.3431 21 11 19.6569 11 18C11 17.5372 11.1052 17.0984 11.2926 16.7068L9.29323 14.7074C8.90157 14.8948 8.46277 15 8 15C6.34315 15 5 13.6569 5 12C5 10.3431 6.34315 9 8 9C8.46277 9 8.90157 9.1052 9.29323 9.29256L11.2926 7.29323C11.1052 6.90157 11 6.46277 11 6ZM8 11C7.44772 11 7 11.4477 7 12C7 12.5523 7.44772 13 8 13C8.27642 13 8.52505 12.8892 8.70711 12.7071C8.88917 12.525 9 12.2764 9 12C9 11.7236 8.88917 11.475 8.70711 11.2929C8.52505 11.1108 8.27642 11 8 11ZM14 17C13.7236 17 13.475 17.1108 13.2929 17.2929C13.1108 17.475 13 17.7236 13 18C13 18.5523 13.4477 19 14 19C14.5523 19 15 18.5523 15 18C15 17.4477 14.5523 17 14 17Z" fill="#ffffff"/>
+            </svg></li>
+        <li><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 5C13.4477 5 13 5.44772 13 6C13 6.27642 13.1108 6.52505 13.2929 6.70711C13.475 6.88917 13.7236 7 14 7C14.5523 7 15 6.55228 15 6C15 5.44772 14.5523 5 14 5ZM11 6C11 4.34315 12.3431 3 14 3C15.6569 3 17 4.34315 17 6C17 7.65685 15.6569 9 14 9C13.5372 9 13.0984 8.8948 12.7068 8.70744L10.7074 10.7068C10.8948 11.0984 11 11.5372 11 12C11 12.4628 10.8948 12.9016 10.7074 13.2932L12.7068 15.2926C13.0984 15.1052 13.5372 15 14 15C15.6569 15 17 16.3431 17 18C17 19.6569 15.6569 21 14 21C12.3431 21 11 19.6569 11 18C11 17.5372 11.1052 17.0984 11.2926 16.7068L9.29323 14.7074C8.90157 14.8948 8.46277 15 8 15C6.34315 15 5 13.6569 5 12C5 10.3431 6.34315 9 8 9C8.46277 9 8.90157 9.1052 9.29323 9.29256L11.2926 7.29323C11.1052 6.90157 11 6.46277 11 6ZM8 11C7.44772 11 7 11.4477 7 12C7 12.5523 7.44772 13 8 13C8.27642 13 8.52505 12.8892 8.70711 12.7071C8.88917 12.525 9 12.2764 9 12C9 11.7236 8.88917 11.475 8.70711 11.2929C8.52505 11.1108 8.27642 11 8 11ZM14 17C13.7236 17 13.475 17.1108 13.2929 17.2929C13.1108 17.475 13 17.7236 13 18C13 18.5523 13.4477 19 14 19C14.5523 19 15 18.5523 15 18C15 17.4477 14.5523 17 14 17Z" fill="#ffffff"/>
+            </svg></li>
+        <li><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 5C13.4477 5 13 5.44772 13 6C13 6.27642 13.1108 6.52505 13.2929 6.70711C13.475 6.88917 13.7236 7 14 7C14.5523 7 15 6.55228 15 6C15 5.44772 14.5523 5 14 5ZM11 6C11 4.34315 12.3431 3 14 3C15.6569 3 17 4.34315 17 6C17 7.65685 15.6569 9 14 9C13.5372 9 13.0984 8.8948 12.7068 8.70744L10.7074 10.7068C10.8948 11.0984 11 11.5372 11 12C11 12.4628 10.8948 12.9016 10.7074 13.2932L12.7068 15.2926C13.0984 15.1052 13.5372 15 14 15C15.6569 15 17 16.3431 17 18C17 19.6569 15.6569 21 14 21C12.3431 21 11 19.6569 11 18C11 17.5372 11.1052 17.0984 11.2926 16.7068L9.29323 14.7074C8.90157 14.8948 8.46277 15 8 15C6.34315 15 5 13.6569 5 12C5 10.3431 6.34315 9 8 9C8.46277 9 8.90157 9.1052 9.29323 9.29256L11.2926 7.29323C11.1052 6.90157 11 6.46277 11 6ZM8 11C7.44772 11 7 11.4477 7 12C7 12.5523 7.44772 13 8 13C8.27642 13 8.52505 12.8892 8.70711 12.7071C8.88917 12.525 9 12.2764 9 12C9 11.7236 8.88917 11.475 8.70711 11.2929C8.52505 11.1108 8.27642 11 8 11ZM14 17C13.7236 17 13.475 17.1108 13.2929 17.2929C13.1108 17.475 13 17.7236 13 18C13 18.5523 13.4477 19 14 19C14.5523 19 15 18.5523 15 18C15 17.4477 14.5523 17 14 17Z" fill="#ffffff"/>
+            </svg></li>
+        <li><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 5C13.4477 5 13 5.44772 13 6C13 6.27642 13.1108 6.52505 13.2929 6.70711C13.475 6.88917 13.7236 7 14 7C14.5523 7 15 6.55228 15 6C15 5.44772 14.5523 5 14 5ZM11 6C11 4.34315 12.3431 3 14 3C15.6569 3 17 4.34315 17 6C17 7.65685 15.6569 9 14 9C13.5372 9 13.0984 8.8948 12.7068 8.70744L10.7074 10.7068C10.8948 11.0984 11 11.5372 11 12C11 12.4628 10.8948 12.9016 10.7074 13.2932L12.7068 15.2926C13.0984 15.1052 13.5372 15 14 15C15.6569 15 17 16.3431 17 18C17 19.6569 15.6569 21 14 21C12.3431 21 11 19.6569 11 18C11 17.5372 11.1052 17.0984 11.2926 16.7068L9.29323 14.7074C8.90157 14.8948 8.46277 15 8 15C6.34315 15 5 13.6569 5 12C5 10.3431 6.34315 9 8 9C8.46277 9 8.90157 9.1052 9.29323 9.29256L11.2926 7.29323C11.1052 6.90157 11 6.46277 11 6ZM8 11C7.44772 11 7 11.4477 7 12C7 12.5523 7.44772 13 8 13C8.27642 13 8.52505 12.8892 8.70711 12.7071C8.88917 12.525 9 12.2764 9 12C9 11.7236 8.88917 11.475 8.70711 11.2929C8.52505 11.1108 8.27642 11 8 11ZM14 17C13.7236 17 13.475 17.1108 13.2929 17.2929C13.1108 17.475 13 17.7236 13 18C13 18.5523 13.4477 19 14 19C14.5523 19 15 18.5523 15 18C15 17.4477 14.5523 17 14 17Z" fill="#ffffff"/>
+            </svg></li>
+        <li><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 5C13.4477 5 13 5.44772 13 6C13 6.27642 13.1108 6.52505 13.2929 6.70711C13.475 6.88917 13.7236 7 14 7C14.5523 7 15 6.55228 15 6C15 5.44772 14.5523 5 14 5ZM11 6C11 4.34315 12.3431 3 14 3C15.6569 3 17 4.34315 17 6C17 7.65685 15.6569 9 14 9C13.5372 9 13.0984 8.8948 12.7068 8.70744L10.7074 10.7068C10.8948 11.0984 11 11.5372 11 12C11 12.4628 10.8948 12.9016 10.7074 13.2932L12.7068 15.2926C13.0984 15.1052 13.5372 15 14 15C15.6569 15 17 16.3431 17 18C17 19.6569 15.6569 21 14 21C12.3431 21 11 19.6569 11 18C11 17.5372 11.1052 17.0984 11.2926 16.7068L9.29323 14.7074C8.90157 14.8948 8.46277 15 8 15C6.34315 15 5 13.6569 5 12C5 10.3431 6.34315 9 8 9C8.46277 9 8.90157 9.1052 9.29323 9.29256L11.2926 7.29323C11.1052 6.90157 11 6.46277 11 6ZM8 11C7.44772 11 7 11.4477 7 12C7 12.5523 7.44772 13 8 13C8.27642 13 8.52505 12.8892 8.70711 12.7071C8.88917 12.525 9 12.2764 9 12C9 11.7236 8.88917 11.475 8.70711 11.2929C8.52505 11.1108 8.27642 11 8 11ZM14 17C13.7236 17 13.475 17.1108 13.2929 17.2929C13.1108 17.475 13 17.7236 13 18C13 18.5523 13.4477 19 14 19C14.5523 19 15 18.5523 15 18C15 17.4477 14.5523 17 14 17Z" fill="#ffffff"/>
+            </svg></li>
+    </ul>
 </section>
+<!-- SOCIAL -->
 
-<footer>
-    <section id="social">
-        <span>Get connected with us on social networks : </span>
-        <ul id="social-icons">
-            <li class="social.icon"><img src="images/whatsapp.png" alt=""></li>
-            <li class="social.icon"><img src="images/whatsapp.png" alt=""></li>
-            <li class="social.icon"><img src="images/whatsapp.png" alt=""></li>
-            <li class="social.icon"><img src="images/whatsapp.png" alt=""></li>
-            <li class="social.icon"><img src="images/whatsapp.png" alt=""></li>
-            <li class="social.icon"><img src="images/whatsapp.png" alt=""></li>
-        </ul>
-    </section>
-    <section id="footer-content">
-        <div class="footer-description">
+
+<footer id="footer__content">
+        <div class="footer__description">
             <h3>
                 INFO ALASRIA
             </h3>
             <hr>
             <p>We provide multiple services related to employement in gulf countries like Saudi Arabia, UAE, Qatar, Kuwait.</p>
         </div>
-        <div class="footer-pages">
+        <div class="footer__pages">
             <h3>PAGES</h3>
             <hr>
             <ul>
-                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#aboutUs">About Us</a></li>
                 <li><a href="#services">Our Services</a></li>
-                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="#contactUs">Contact Us</a></li>
                 <li><a href="">Vacancy</a></li>
             </ul>
         </div>
-        <div class="footer-links">
+        <div class="footer__links">
             <h3>CONTACT US</h3>
             <hr>
             <ul>
                 <li>
                     <a href="">
-                        <img src="images/location.png" alt="">
+                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         Clare Road, Byculla 400008, IN
                     </a>
                 </li>
                 <li>
                     <a href="mailto:infotradlink1990@gmail.com">
-                        <img src="images/location.png" alt=""> infotradlink1990@gmail.com
+                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> infotradlink1990@gmail.com
                     </a>
                     </li>
                 <li>
                     <a href="tel:+91 8433 614 341">
-                        <img src="images/location.png" alt="">
+                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                          +91 8433 614 341
                     </a>
                 </li>
                 <li>
                     <a href="tel:+91 8433 614 341">
-                        <img src="images/location.png" alt=""> 
+                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         +91 8433 614 341
                     </a>
                 </li>
             </ul>
         </div>
-    </section>
 </footer>
 
     <!-- JS -->
-    <script src="js/app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

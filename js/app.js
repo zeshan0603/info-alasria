@@ -28,23 +28,15 @@ function showSlides(n) {
 }
 
 // NAVBAR
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.getElementById("nav-menu");
 
-const hamburger =  document.getElementById("hamburger");
-const navLinks = document.getElementById("nav-links");
-const navBar = document.getElementById("main-nav")
-const close = document.getElementById("close");
-
-hamburger.addEventListener('click',()=>{
-    navBar.style.height ="200px";
-    navLinks.style.display ="flex";
-    hamburger.style.display =" none";
-    close.style.display = "block";
+hamburger.addEventListener("click",()=>{
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 })
 
-
-close.addEventListener('click',()=>{
-  navBar.style.height ="55px";
-  navLinks.style.display ="none";
-  hamburger.style.display =" block";
-  close.style.display = "none";
-})
+document.querySelectorAll(".nav-link").forEach(n=>n.addEventListener("click",()=>{
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))
