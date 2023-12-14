@@ -566,7 +566,7 @@ footer div{
             left: 0;
             flex-direction: column;
             background-color: #eeeeee;
-            width: 100%;
+            width: 100vw;
             text-align: center;
             transition: 0.5s;
             transition: opacity 1s ease;
@@ -578,7 +578,7 @@ footer div{
         #nav-menu.active{
             top: 50px;
             opacity: 1;
-            width: 100%;
+            width: 100vw;
         }
 
         /* NAVBAR RESPONSIVE  */
