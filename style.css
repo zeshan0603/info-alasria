@@ -239,6 +239,7 @@ body{
     border-radius: 5px;
     font-size: 1rem;
     font-family: var(--generalFont);
+    cursor: pointer;
 }
 /* SERVICES END */
 
@@ -386,10 +387,10 @@ textarea{
     padding: 3rem 13rem;
 }
 
-.footer div{
+.footer__description,.footer__links,.footer__pages{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 30%;
  
 }
 
@@ -482,6 +483,10 @@ textarea{
         width: 328px;
          height: 470px;
      }
+
+     .footer{
+        padding: 3rem;
+    }
   }
 
   @media (max-width: 1200px) {
@@ -515,15 +520,24 @@ textarea{
     #social-links{
         width: 350px;
     }
+    
+    .footer{
+        padding: 2rem 1rem;
+    }
+    .footer__description p{
+        width: 75%;
+    }
   }
   @media (max-width: 992px) {
         /* NAVBAR RESPONSIVE  */
         .hamburger{
             display: block;
             position: absolute;
-            right: 15%;
-            top: 15px;
+            right: 5%;
+            top: 13px;
         }
+
+        
         .hamburger.active .bar:nth-child(2){
             opacity: 0;
         }
@@ -560,33 +574,20 @@ textarea{
 
         .service__cards{
             width: 100vw;
+            column-gap: 60px;
         }
-
-        .footer{
-            flex-direction: column;
-            align-items: center;
-            padding: 2rem;
-            gap: 2rem;
-        }
-
-        .footer div{
-            align-items: center;
-        }
-        .footer div ul{
-            align-items: center;
-        }
+        
         .contactUs{
-            width: 100vw;
+            width: 90vw;
             padding: 1rem 0.3rem;
         }
         .contact__info{
             padding: 0;
+            /* border: 1px solid red; */
+            font-size: 0.9rem;
         }
     
-        .footer__description{
-            text-align: center;
-            width: 70%;
-        }
+        
         .aboutUs img{
             width: 60%;
             height: auto;
@@ -599,27 +600,27 @@ textarea{
             gap: 1rem;
             padding: 0;
         }
-
         #logo{
             position: absolute;
             top: 15px;
-            left: 10%;
+            left: 5%;
         }
-
         .social{
             align-items: center;
             height: auto;
             padding: 2rem;
         }
-
         .social ul{
             width: 200px;
         }
+        
+
   }
   @media (max-width: 770px) {
 
     .service__cards{
-        width: 80vw;
+        width: 100vw;
+        gap: 35px;
     }
     .contactUs,.contactUs form{
         display: flex;
@@ -629,6 +630,10 @@ textarea{
         gap: 1rem;
         padding-bottom: 2rem;
     }
+
+    .contact__info{
+        font-size: 1rem;
+    }
     .contactUs p{
         width: 70%;
     }
@@ -637,7 +642,42 @@ textarea{
         display: flex;
         flex-direction: column;
     }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .footer div{
+        align-items: center;
+    }
+    .footer div ul{
+        align-items: center;
+    }
+    .footer div{
+        text-align: center;
+        width: 100%;
+        /* border: 1px solid red; */
+        align-self: stretch;
+    }
+    .footer__description p{
+        width: 100%;
+    }
+
+    .footer__links hr{
+        margin-bottom: 20px;
+    }
+
   }
+
+  @media (max-width: 575px) {
+    .contactUs{
+        width: 100vw;
+    }
+ }
+
   @media (max-width: 400px) {
     .aboutUs{
         width: 90vw;
