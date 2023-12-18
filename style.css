@@ -122,10 +122,10 @@ body{
     object-fit: cover;
   }
 
-  .swiper-slide:nth-child(1) img
-    {
-        object-position: top;
-    }
+  .carousel__img1{
+   object-position: top; 
+  }
+
   .swiper-pagination-bullet {
     width: 25px;
     height: 5px;
