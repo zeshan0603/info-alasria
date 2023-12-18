@@ -4,9 +4,12 @@
     --generalShadow :0 10px 50px rgb(180, 180, 180) ;
     --generalTransition : all ease 0.3s;
 }
-html{
-    scroll-behavior: smooth;
-  }
+
+html
+    {
+        scroll-behavior: smooth;
+    }
+    
 *{
     margin: 0;
     padding: 0;
@@ -23,8 +26,8 @@ body{
     position: relative;
 }
 
-
-section{
+/* SECTION MARGIN */
+.aboutUs,.services,.contactUs,.social{
     margin: 3rem 0;
 }
 
@@ -119,25 +122,10 @@ section{
     object-fit: cover;
   }
 
-
-  .slide-1{
-    background-image: url(images/carousel-img-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: center; */
-  }
-  .slide-2{
-    background-image: url(images/carousel-img-3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  .slide-3{
-    background-image: url(images/carousel-img-2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+  .swiper-slide:nth-child(1) img
+    {
+        object-position: top;
+    }
   .swiper-pagination-bullet {
     width: 25px;
     height: 5px;
@@ -153,7 +141,7 @@ section{
   }
 
 /* ABOUT US START */
-#aboutUs{
+.aboutUs{
    display: flex;
    flex-wrap: wrap;
    width: 65vw;
@@ -183,7 +171,7 @@ section{
     line-height: 1.4rem;
 }
 
-#aboutUs img{
+.aboutUs img{
    width: 378px;
     height: 554px;
     margin: 1.5rem 0;
@@ -192,13 +180,13 @@ section{
 
 
 /* SERVICES START */
-#services{
+.services{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#services h2{
+.services h2{
     font-size: 2.5rem;
     font-weight: 500;
 }
@@ -257,7 +245,7 @@ section{
 
 
 /* CONTACT US START */
-#contactUs{
+.contactUs{
     background-color: #eeeeee;
     margin: 3rem auto;
     width: 70vw;
@@ -269,14 +257,14 @@ section{
     justify-items: center;
     position: relative;
 }
-#contactUs h3{
+.contactUs h3{
     font-size: 2.5rem;
     font-weight: 500;
     grid-column: 1/3;
     margin: 0 auto;
     margin-bottom: 0.5rem;
 }
-#contactUs p{
+.contactUs p{
     grid-column: 1/3;
     width: 50%;
     text-align: center;
@@ -286,7 +274,7 @@ section{
     margin: 0 auto;
     margin-bottom: 3rem;
 }
-#contactUs form{
+.contactUs form{
     grid-column: 1/2;
     width: 100%;
     height: auto;
@@ -330,7 +318,7 @@ textarea{
     border: 1px solid rgb(211, 211, 211);
 }
 
-#contactUs form input{
+.contactUs form input{
     padding: 0.7rem;
     outline: none;
     border-radius: 5px;
@@ -362,7 +350,7 @@ textarea{
 
 
 /* SOCIAL SECTION START */
-#social{
+.social{
     width: 100%;
     height: 120px;
     background-color: rgb(91,125,177);
@@ -374,11 +362,11 @@ textarea{
     gap: 1rem;
     margin-bottom: 0;
 }
-#social li{
+.social li{
     list-style-type: none;
 }
 
-#social ul{
+.social ul{
     display: flex;
     justify-content: space-between;
     width: 30%;
@@ -388,7 +376,7 @@ textarea{
 
 
 /* FOOTER START */
-footer{
+.footer{
     width: 100%;
     height: auto;
     background-color: #ECEFF1;
@@ -398,7 +386,7 @@ footer{
     padding: 3rem 13rem;
 }
 
-footer div{
+.footer div{
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -416,10 +404,10 @@ footer div{
     margin-bottom: 1.5rem;
 }
 
-#footer__content div a{
+.footer div a{
     color: black;
 }
-#footer__content div hr{
+.footer div hr{
     width: 60px;
     color: rgb(145, 145, 145);
     height: 3px;
@@ -427,7 +415,7 @@ footer div{
     border: none;
     outline: none;
 }
-#footer__content div h3{
+.footer div h3{
     font-size: 1rem;
 }
 .footer__pages hr{
@@ -469,7 +457,7 @@ footer div{
     .service__cards{
         width: 90vw;
     }
-    #aboutUs{
+    .aboutUs{
         width: 70vw;
     }
 }
@@ -485,12 +473,12 @@ footer div{
     footer{
         padding: 2rem 5rem;
     }
-    #aboutUs{
+    .aboutUs{
         padding-left: 2rem;
         padding-right: 2rem;
         width: 70vw;
      }
-     #aboutUs img{
+     .aboutUs img{
         width: 328px;
          height: 470px;
      }
@@ -502,7 +490,7 @@ footer div{
         padding: 2rem;
     }
     
-    #contactUs{
+    .contactUs{
         width: 85vw;
     }
 
@@ -510,7 +498,7 @@ footer div{
         width: 80vw;
     }
 
-    #aboutUs{
+    .aboutUs{
         flex-direction: column;
         align-items: center;
         padding: 2rem auto;
@@ -519,24 +507,11 @@ footer div{
 
     .aboutUs__content{
         width: 100%;
-        /* align-self: stretch; */
     }
     #mainNav{
         padding: 0 8rem;
     }
-    #contact-us-container{
-        width: 70vw;
-        height: 750px;
-    }
-    .contact-us-header p{
-        max-width: 60%;
-    }
-    #contact-us-container form{
-        align-self: stretch;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-    }
+    
     #social-links{
         width: 350px;
     }
@@ -587,20 +562,20 @@ footer div{
             width: 100vw;
         }
 
-        #footer__content{
+        .footer{
             flex-direction: column;
             align-items: center;
             padding: 2rem;
             gap: 2rem;
         }
 
-        #footer__content div{
+        .footer div{
             align-items: center;
         }
-        #footer__content div ul{
+        .footer div ul{
             align-items: center;
         }
-        #contactUs{
+        .contactUs{
             width: 100vw;
             padding: 1rem 0.3rem;
         }
@@ -612,7 +587,7 @@ footer div{
             text-align: center;
             width: 70%;
         }
-        #aboutUs img{
+        .aboutUs img{
             width: 60%;
             height: auto;
         }
@@ -631,13 +606,13 @@ footer div{
             left: 10%;
         }
 
-        #social{
+        .social{
             align-items: center;
             height: auto;
             padding: 2rem;
         }
 
-        #social ul{
+        .social ul{
             width: 200px;
         }
   }
@@ -646,45 +621,25 @@ footer div{
     .service__cards{
         width: 80vw;
     }
-
-
-    #contactUs,#contactUs form{
+    .contactUs,.contactUs form{
         display: flex;
         flex-direction: column;
     }
-
-    #contactUs{
+    .contactUs{
         gap: 1rem;
         padding-bottom: 2rem;
     }
-    #contactUs p{
+    .contactUs p{
         width: 70%;
     }
    
-    .prev{
-        left: 15px;
-      }
-      .next {
-        right: 15px;
-      }
-
-    #contact-us-container{
-        padding: 1rem 0;
-        gap: 2rem;
-        width: 70vw;
-    }
-
-    #contact-us-container form{
-        padding: 0 1rem;
-    }
-
     .contact-us-info{
         display: flex;
         flex-direction: column;
     }
   }
   @media (max-width: 400px) {
-    #aboutUs{
+    .aboutUs{
         width: 90vw;
         padding: 2rem;
     }
